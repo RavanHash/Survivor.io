@@ -919,7 +919,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 72589065, guid: 79de20b8f40b3df42b806a9e99be7c9e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 622247048, guid: 79de20b8f40b3df42b806a9e99be7c9e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1123,6 +1123,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 434407486401592174, guid: 79de20b8f40b3df42b806a9e99be7c9e, type: 3}
       propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703254416427223284, guid: 79de20b8f40b3df42b806a9e99be7c9e, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
