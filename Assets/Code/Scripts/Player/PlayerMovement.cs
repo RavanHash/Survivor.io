@@ -93,8 +93,8 @@ namespace Code.Scripts.Player
             _isDied = true;
             _skeletonAnimation.AnimationName = "die";
             _rb.velocity = Vector2.zero;
-            yield return new WaitForSeconds(2f);
-
+            yield return new WaitForSeconds(1f);
+            
             UIManager.Instance.OpenLoosePanel();
         }
     }

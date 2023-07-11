@@ -13,14 +13,18 @@ namespace Code.Scripts.Abilities.AbilitiesHolder
     {
         [SerializeField] private List<ActiveAbilityBase> abilities;
 
+        private bool canUseAbilities = true;
+        
         private void Awake()
         {
             Application.quitting += ResetSkills;
             LevelManager.Instance.OnSceneLoad += ResetSkills;
+            GameManager.Instance.OnLooseGame += OnLooseGame;
         }
 
         private void Start()
         {
+            canUseAbilities = true;
             abilities = FindObjectOfType<StatsManipulator>().ActiveAbilities;
         }
 
@@ -36,6 +40,9 @@ namespace Code.Scripts.Abilities.AbilitiesHolder
 
         private void Update()
         {
+            if(!canUseAbilities)
+                return;
+            
             foreach (var abilityBase in abilities)
             {
                 var ability = (ActiveAbilityBase)abilityBase;
@@ -45,6 +52,11 @@ namespace Code.Scripts.Abilities.AbilitiesHolder
             }
 
             TryActivateAbilities();
+        }
+        
+        private void OnLooseGame()
+        {
+            canUseAbilities = false;
         }
 
         private void TryActivateAbilities()

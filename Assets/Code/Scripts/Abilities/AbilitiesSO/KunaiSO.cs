@@ -3,6 +3,7 @@ using Code.Scripts.Abilities.AbilitiesMono;
 using Code.Scripts.Abilities.Abstraction;
 using Code.Scripts.Managers;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Code.Scripts.Abilities.AbilitiesSO
@@ -17,9 +18,8 @@ namespace Code.Scripts.Abilities.AbilitiesSO
         public override void Activate(GameObject caster)
         {
             CoroutineStarter.Instance.StartCoroutine(ThrowKunai(caster));
-
         }
-        
+
         private IEnumerator ThrowKunai(GameObject caster)
         {
             for (int i = 0; i < currentLevel; i++)
