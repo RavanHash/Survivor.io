@@ -41,9 +41,7 @@ namespace Code.Scripts.Managers
 
         public void LoadLevel(string levelName)
         {
-            SceneManager.LoadScene(levelName, LoadSceneMode.Additive);
             Scene scene = SceneManager.GetSceneByName(levelName);
-            SceneManager.UnloadSceneAsync(scene.buildIndex);
             StartCoroutine(LoadSceneAsync(scene.buildIndex));
         }
 
