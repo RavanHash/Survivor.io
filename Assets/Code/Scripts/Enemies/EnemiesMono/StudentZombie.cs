@@ -90,6 +90,7 @@ public class StudentZombie : EnemyMonoBase, IDestructable
         if (_health < 0 && _isDestructable)
         {
             SoundManager.Instance.Play("HitNear",true);
+            TimeManager.Instance.IncreaseEnemyKillCount();
             UIManager.Instance.GamePanel.UpdateEnemyKill();
 
             float randomValue = UnityEngine.Random.value;
@@ -97,7 +98,6 @@ public class StudentZombie : EnemyMonoBase, IDestructable
             {
                 CollectableHolder.Instance.SpawnEnemyCollectable(this);
             }
-            TimeManager.Instance.IncreaseEnemyKillCount();
             
             _animator.SetTrigger("Die");
             CallEnemyDie(gameObject,0);
