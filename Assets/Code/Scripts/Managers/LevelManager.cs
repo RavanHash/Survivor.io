@@ -8,7 +8,7 @@ namespace Code.Scripts.Managers
 {
     public class LevelManager : SingletoneBase<LevelManager>
     {
-         private AbilityHolder _abilityHolder;
+        private AbilityHolder _abilityHolder;
         private int _currentLevel = 2;
         private float _loadProgress;
         public int CurrentLevel => _currentLevel;
@@ -80,6 +80,8 @@ namespace Code.Scripts.Managers
 
         public IEnumerator ReloadSceneAsync(Action onComplete = null)
         {
+            GameManager.Instance.ResumeGame();
+
             _abilityHolder = FindObjectOfType<AbilityHolder>();
             _abilityHolder.ResetSkills();
             yield return null;
