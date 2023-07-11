@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Character layered_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: d3fd08ab56016204abcc49c4162f359e, type: 2}
+  - {fileID: 11400000, guid: d2df660c642ec54409336d8604cc1b4e, type: 2}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: bac77702c588982409b1148b5921c9d5, type: 3}
   isUpgradingBlendModeMaterials: 0
