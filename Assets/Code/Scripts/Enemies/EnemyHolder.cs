@@ -171,9 +171,10 @@ public class EnemyHolder : MonoBehaviour
 
     IEnumerator ObjDisable(GameObject obj)
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         obj.GetComponent<EnemyMonoBase>().OnEnemyDie -= DestroyingEnemy;
         obj?.SetActive(false);
+        Destroy(obj);
     }
 
     private void Start()
