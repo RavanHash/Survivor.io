@@ -158,7 +158,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!195 &2114227752158096024
 NavMeshAgent:
@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1364c3e869016ee489539e6644d1bcbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 0
   _enemyData: {fileID: 11400000, guid: 5804c68701a5d8641bd3028592aefab8, type: 2}
 --- !u!199 &-2584948345787683316
 ParticleSystemRenderer:

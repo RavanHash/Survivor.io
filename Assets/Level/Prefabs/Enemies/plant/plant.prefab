@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66e5f9f96d053e640985c2553f982f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 0
   bullet: {fileID: 2289392994968858588, guid: fedfb2e31a7d1c040a02f164743f5026, type: 3}
   _enemyData: {fileID: 11400000, guid: 0b6650cede53e2f44b8d64b943bebf1e, type: 2}
 --- !u!50 &322882964
@@ -181,7 +182,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &-5522695330866602373
 BoxCollider2D:
