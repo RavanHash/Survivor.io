@@ -42,6 +42,8 @@ namespace Code.Scripts.PassiveAbilities.StatsManipulation
 
         private float _tempSpeed;
 
+        private bool _isDead;
+
         public ActiveAbilityBase DefaultAbility => defaultAbility;
         public float Experience => _experience;
         public float MaxHealth => _maxHealth;
@@ -250,8 +252,9 @@ namespace Code.Scripts.PassiveAbilities.StatsManipulation
 
             PlayerCanvas.Instance.UpdatePlayerHealth();
 
-            if (_currentHealth <= 0)
+            if (_currentHealth <= 0 && !_isDead)
             {
+                _isDead = true;
                 GameManager.Instance.LooseGame();
                 SoundManager.Instance.Play("PlayerDeath", false);
             }

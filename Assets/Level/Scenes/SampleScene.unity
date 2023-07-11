@@ -2504,8 +2504,8 @@ MonoBehaviour:
   _passiveAbilities: []
   maxHealth: 1
   currentHealth: 1
-  armor: 10
-  movementSpeed: 5
+  armor: 1
+  movementSpeed: 6
   experienceModifier: 1
   _experience: 0
 --- !u!1 &1909197013
