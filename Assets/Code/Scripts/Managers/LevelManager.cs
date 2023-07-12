@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using CASP.SoundManager;
 using Code.Scripts.Abilities.AbilitiesHolder;
 using UnityEngine;
 using UnityEngine.SceneManagement;
