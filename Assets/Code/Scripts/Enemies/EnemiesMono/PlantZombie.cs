@@ -59,10 +59,8 @@ public class PlantZombie : EnemyMonoBase, IDestructable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(1);
         if (collision.TryGetComponent<PlayerMovement>(out PlayerMovement destructable))
         {
-            Debug.Log(2);
             StatsManipulator.Instance.TakeDamage(4f);
         }
     }

@@ -2505,7 +2505,7 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 5
   armor: 5
-  movementSpeed: 5.5
+  movementSpeed: 5.25
   experienceModifier: 1
   _experience: 0
 --- !u!1 &1909197013
