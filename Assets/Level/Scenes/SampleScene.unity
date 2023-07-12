@@ -738,63 +738,6 @@ MonoBehaviour:
   _critDamageColor: {r: 0.9056604, g: 0.24421667, b: 0.06407974, a: 1}
   _highDamageColor: {r: 0.9528302, g: 0.6784691, b: 0.13932894, a: 1}
   numberPrefab: {fileID: 6186917771986201805, guid: 2700ceed8d2745a49b0268da9965f587, type: 3}
---- !u!1001 &800987914
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1163401958736406056, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_Name
-      value: plant
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.251
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1163401958736406058, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca833ea9ead04494f8b70566aeeb4d49, type: 3}
 --- !u!1 &806735549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,10 +2502,10 @@ MonoBehaviour:
   defaultAbility: {fileID: 11400000, guid: de14ccb363059c34a8f7864f282aada1, type: 2}
   _activeAbilities: []
   _passiveAbilities: []
-  maxHealth: 1
-  currentHealth: 1
-  armor: 1
-  movementSpeed: 6
+  maxHealth: 5
+  currentHealth: 5
+  armor: 5
+  movementSpeed: 5.5
   experienceModifier: 1
   _experience: 0
 --- !u!1 &1909197013

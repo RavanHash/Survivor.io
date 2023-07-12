@@ -1,8 +1,11 @@
+using System;
 using Assets.Code.Scripts.Enemies.Abstraction;
 using System.Collections.Generic;
 using Code.Scripts.Collectables.CollectablesHolder;
 using Code.Scripts.Enemies;
 using Code.Scripts.Managers;
+using Code.Scripts.PassiveAbilities.StatsManipulation;
+using Code.Scripts.Player;
 using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -54,6 +57,15 @@ public class PlantZombie : EnemyMonoBase, IDestructable
         Attack();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(1);
+        if (collision.TryGetComponent<PlayerMovement>(out PlayerMovement destructable))
+        {
+            Debug.Log(2);
+            StatsManipulator.Instance.TakeDamage(4f);
+        }
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
